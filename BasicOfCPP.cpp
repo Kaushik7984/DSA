@@ -3,8 +3,8 @@ using namespace std;  // to use cout
 
 int main() {
     
-  cout << " HEllO WORLD " << endl;  // endl for new line
-  cout << " \n I'm Kaushik Tapaniya" ; // cout << for print output on display
+  cout << "HEllO WORLD" << endl;  // endl for new line
+  cout << "I'm Kaushik Tapaniya" <<endl ; // cout << for print output on display
 
   int a = 123;
   cout<< a <<endl;
@@ -38,4 +38,18 @@ int main() {
 
 
 }
+
+/*
+ Operators in c++
+
+  Arithmetic operators ( +, -, *, /, % )
+  Compound assignment (+=, -=, *=, /=, %=, >>=, <<=, &=, ^=, |=)
+  Increment and decrement (++, --)
+  Relational and comparison operators ( ==, !=, >, <, >=, <= )
+  Logical operators ( !, &&, || )
+  Conditional ternary operator ( ? ) ( c = (a>b) ? a : b )
+  Comma operator ( , )  ( a = (b=3, b+2); )
+  Bitwise operators ( &, |, ^, ~, <<, >> )
+
+ */
 
