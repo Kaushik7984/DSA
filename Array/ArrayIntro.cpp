@@ -33,6 +33,10 @@ int main() {
 
     int n = 15;
     //printArray(third, 15);
+    // for(int i=0; i<n; i++){
+    //     cout<< third[i]<< " ";
+    // }
+    
     int thirdSize = sizeof(third)/sizeof(int);
     cout<<" Size of Third is " << thirdSize <<endl;
 
