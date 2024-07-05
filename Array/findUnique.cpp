@@ -9,19 +9,19 @@ void printDistinct(int arr[], int n)
     // First sort the array so that all occurrences become consecutive
     sort(arr, arr + n);
  
-    // Traverse the sorted array
-    for (int i=0; i<n; i++)
+    
+    for (int i=0; i<n; i++) // Traverse the sorted array
     {
-       // Move the index ahead while there are duplicates
-       while (i < n-1 && arr[i] == arr[i+1])
+       
+       while (i < n-1 && arr[i] == arr[i+1]) // Move the index ahead while there are duplicates
           i++;
  
-       // print last occurrence of the current element
+       
        cout << arr[i] << " ";
     }
 }
  
-// Driver program to test above function
+
 int main()
 {
     int arr[] = {6, 10, 5, 4, 9, 120, 4, 6, 10};
