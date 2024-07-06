@@ -3,15 +3,20 @@
  #include<iostream>
  using namespace std;
 
- void reverse(int arr[], int n){
+ void swap(int arr[], int n){
+    int i;
 
-    int start = 0;
-    int end = n-1;
+    while(i<n){
+          if(i+1< n) {
+            // swap(arr[i], arr[i + 1]);
 
-    while(start <= end){
-        swap(arr[start], arr[start + 1]);
-        start = start + 2 ;
-     
+            int temp;
+            arr[i]= temp;
+            temp = arr[i + 1];
+            arr[i + 1] = arr[i];
+
+          i = i + 2 ;
+          }
     }
  }
 
@@ -25,8 +30,16 @@
 
 int main(){
      int arr[6] = {1,2,3,4,5,6};
-     reverse(arr, 6);
+     int odd[5] = {11,33,9,76,43};
+
+     swap(arr, 6);
      printArray(arr, 6);
+
+     cout<< endl;
+
+     swap(odd, 5);
+     printArray(odd, 5);
+
  return 0;
 }
 

@@ -1,31 +1,29 @@
-//print all unique elements in a given array
+/* you have been given an integer arrayList(ARR) of size N. where N is equal to {2M+1}, Now, in the given arrayList,"M" numbers are present twice and one number is present only once. 
+You need to find andreturn that number which is unique in the arrayList*/
 
 
-#include <bits/stdc++.h>
-using namespace std;
- 
-void printDistinct(int arr[], int n)
-{
-    // First sort the array so that all occurrences become consecutive
-    sort(arr, arr + n);
- 
-    
-    for (int i=0; i<n; i++) // Traverse the sorted array
-    {
-       
-       while (i < n-1 && arr[i] == arr[i+1]) // Move the index ahead while there are duplicates
-          i++;
- 
-       
-       cout << arr[i] << " ";
+
+ #include<iostream>
+ using namespace std;
+
+ int findUnique(int arr[], int size){
+    int ans = 0;
+
+    for (int i = 0; i < size; i++){
+
+            ans = ans ^ arr[i];
     }
+    cout << ans;
+    // return ans;
 }
- 
 
-int main()
-{
-    int arr[] = {6, 10, 5, 4, 9, 120, 4, 6, 10};
-    int n = sizeof(arr)/sizeof(arr[0]);
-    printDistinct(arr, n);
-    return 0;
+int main(){
+     int arr[7] = {1,3,1,6,3,6,2};
+    
+     findUnique(arr, 7);
+
+ return 0;
 }
+
+
+
