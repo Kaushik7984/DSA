@@ -16,6 +16,6 @@ vector<vector<int> > pairSum(vector<int> &arr, int s){
             }
         }
    }
-   sort(ans.begin(), ans.end());
+//    sort(ans.begin(), ans.end());
    return ans;
 }
